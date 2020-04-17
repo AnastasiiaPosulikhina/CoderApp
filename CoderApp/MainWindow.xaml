@@ -1,0 +1,38 @@
+﻿<Window x:Class="CoderApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoderApp"
+        mc:Ignorable="d"
+        Title="CoderAppPro" Height="450" Width="800" Background="#FFFBFBFF">
+	<Grid OpacityMask="White" HorizontalAlignment="Left" Margin="0,0,-0.493,0.254" Width="795">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="5*"/>
+			<ColumnDefinition Width="48*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="195*"/>
+			<RowDefinition Height="16*"/>
+		</Grid.RowDefinitions>
+		<TextBox Name ="TextBefore" HorizontalAlignment="Left" Height="300" Width="310" Margin="50,100,0,0" TextWrapping="Wrap" Text="Откройте файл с исходным текстом или введите его..." VerticalAlignment="Top" Grid.RowSpan="2" TextChanged="TextBefore_TextChanged" Grid.ColumnSpan="2" Cursor="IBeam" BorderBrush="#FFE1E1F5" SelectionBrush="#FF0078D7"/>
+		<TextBox Name ="TextAfter" HorizontalAlignment="Left" Height="300" Width="310" Margin="344.776,100,0,0" TextWrapping="Wrap" Text="Здесь будет новый текст:)" VerticalAlignment="Top" TextChanged="TextAfter_TextChanged" Grid.RowSpan="2" Grid.Column="1" BorderBrush="#FFE1E1F5"/>
+		<TextBox Name ="Key" HorizontalAlignment="Left" Height="23" Margin="50,35,0,0" TextWrapping="Wrap" Text="Введите ключ..." VerticalAlignment="Top" Width="680" Grid.ColumnSpan="2" Cursor="Pen" BorderBrush="#FFE1E1F5"/>
+		<Menu Height="25" VerticalAlignment="Top" Background="GhostWhite" Grid.ColumnSpan="2" Margin="0,0,-0.776,0">
+			<MenuItem Header="Файл" Height="25" Background="GhostWhite">
+				<MenuItem Header="Открыть"  Click="Button_OpenFile" Background="GhostWhite" BorderBrush="GhostWhite"></MenuItem>
+				<MenuItem Header="Сохранить" Background="GhostWhite" BorderBrush="GhostWhite">
+					<MenuItem Header="В формате .txt" Click="Button_SaveToTXT" Background="GhostWhite" BorderBrush="GhostWhite"></MenuItem>
+					<MenuItem Header="В формате .docx" Click="Button_SaveToDOCX" Background="GhostWhite" BorderBrush="GhostWhite"></MenuItem>
+				</MenuItem>
+			</MenuItem>
+			<MenuItem Header="Действие" Background="GhostWhite">
+				<MenuItem Header="Закодировать" Click="Button_Encode" Background="GhostWhite"></MenuItem>
+				<MenuItem Header="Декодировать" Click="Button_Decode" Background="GhostWhite"></MenuItem>
+			</MenuItem>
+		</Menu>
+		<Label Content="Исходный текст" FontWeight="Bold" FontSize ="18" HorizontalAlignment="Left" Margin="50,58,0,0" Width="160" Grid.ColumnSpan="2" Height="37" VerticalAlignment="Top"/>
+		<Label Content="Преобразованный текст" FontWeight="Bold" FontSize ="18" Margin="0,60,65.224,0" Background="#00000000" Grid.Column="1" Height="42" VerticalAlignment="Top" HorizontalAlignment="Right" Width="225"/>
+		<Button Content="&lt;" HorizontalAlignment="Left" Margin="284.776,100,0,0" VerticalAlignment="Top" Width="60" Background="GhostWhite" Click="Button_ChangeText" Grid.Column="1" BorderBrush="#FFE1E1F5" Height="20"/>
+	</Grid>
+</Window>
