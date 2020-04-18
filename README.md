@@ -1,17 +1,15 @@
 ## CoderApp
 C# elective course by First Line Software
 
-work №3
+Work №3
 
-WPF приложение, реализованное в ходе обучения на курсе по программированию от компании First Line Software.
+CoderApp is a WPF application, which has the following functionalities:
 
- Функциональные возможности:
+1. Opening files in .txt / .docx format.
+2. Specifying a key for encrypting / decrypting information using the Vigenere cipher.
+3. Encryption / decryption of information from a file opened by a user.
+4. Encryption / decryption of information entered by a user from the keyboard.
+5. Saving the result of encryption / decryption in a separate file of .txt / .docx format with the name and directory for saving.
 
-1. Открытие файлов формата .txt/.docx.
-2. Возможность указать ключ для зашифровывания/дешифровывания информации с помощью шифра Виженера.
-3. Зашифровывание/дешифровывание информации из открытого пользователем файла с выводом на экран.
-4. Зашифровывание/дешифровывание информации, введённой пользователем с клавиатуры, с выводом на экран.
-5. Сохранение результата шифрования/дешифрования информации в отдельный файл формата .txt/.docx с указанием названия и директории для сохранения.
-
-Данная программа имеет интерфейс для взаимодействия с пользователями, меню для управления функциональными возможностями.
-Её основной функционал покрыт автоматическими Unit тестами с использованием стандартных возможностей Unit Testing Framework.
+This program has an interface for interacting with users, a menu for managing functionalities.
+It is covered by automatic Unit tests using the standard capabilities of the Unit Testing Framework.
