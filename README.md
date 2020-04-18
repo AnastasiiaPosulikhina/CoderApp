@@ -1,5 +1,7 @@
 ## CoderApp
-C# elective course work №3
+C# elective course by First Line Software
+
+work №3
 
 WPF приложение, реализованное в ходе обучения на курсе по программированию от компании First Line Software.
 
