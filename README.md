@@ -11,5 +11,5 @@ CoderApp is a WPF application, which has the following functionalities:
 4. Encryption / decryption of information entered by a user from the keyboard.
 5. Saving the result of encryption / decryption in a separate file of .txt / .docx format with the name and directory for saving.
 
-This program has an interface for interacting with users, a menu for managing functionalities.
+This program has the interface for interacting with users and menu for managing functionalities.
 It is covered by automatic Unit tests using the standard capabilities of the Unit Testing Framework.
